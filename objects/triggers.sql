@@ -1,11 +1,5 @@
 use pipeline_management;
-CREATE TABLE sales_target_achieved_log (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    sales_rep VARCHAR(255),
-    total_value DECIMAL(10, 2),
-    currencycode VARCHAR(10) DEFAULT 'USD',
-    achieved_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+
 DELIMITER //
 
 CREATE TRIGGER log_opportunities_non_us_india
