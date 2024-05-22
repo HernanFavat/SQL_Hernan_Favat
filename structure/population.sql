@@ -116,5 +116,5 @@ VALUES
 ('P676869', 'Summer Dress', 'Clothing XS', 29.99, 13, 'PHP'),
 ('P707172', 'Wireless Headphones Sony', 'Electronics', 299.99, 15, 'USD'),
 ('P5678', 'Fridge GM', 'Home Appliances', 399.50, 15, 'USD'),
-('P737475', 'Rice Cooker Zojirushi', 'Home Appliances', 129.99, 14, 'USD);
+('P737475', 'Rice Cooker Zojirushi', 'Home Appliances', 129.99, 14, 'USD'); 
 
