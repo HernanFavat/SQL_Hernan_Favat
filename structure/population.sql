@@ -27,8 +27,22 @@ VALUES
     ('noah@management.com', 'Noah', 'Gonzalez', '2024-09-20', 1, 'Reseller'),
     ('chloe@management.com', 'Chloe', 'Rodriguez', '2024-10-25', 1, 'Sales Rep');
 
-    INSERT INTO facts_account (a__name, a__number, a__country, primary_contactid, a__createddate)
-    VALUES
+INSERT INTO dim_currency (currency_code, currency_name, currency_rate, c__createddate)
+VALUES
+    ('USD', 'United States Dollar', 1.00, '2023-04-10'), 
+    ('INR', 'Indian Rupee', 0.014, '2024-01-10'), 
+    ('JPY', 'Japanese Yen', 0.0093, '2024-02-15'),
+    ('KRW', 'South Korean Won', 0.00088, '2024-03-20'), 
+    ('CNY', 'Chinese Yuan', 0.16, '2024-04-25'), 
+    ('SGD', 'Singapore Dollar', 0.74, '2024-05-30'),
+    ('AUD', 'Australian Dollar', 0.77, '2024-06-05'), 
+    ('NZD', 'New Zealand Dollar', 0.71, '2024-07-10'), 
+    ('TWD', 'New Taiwan Dollar', 0.036, '2024-08-15'),
+    ('THB', 'Thai Baht', 0.032, '2024-08-15'), 
+    ('PHP', 'Philippine Peso', 0.020, '2024-07-15');
+
+INSERT INTO facts_account (a__name, a__number, a__country, primary_contactid, a__createddate)
+VALUES
     ('ABC Corporation', 'ABC123', 'United States', 1, '2023-05-15'),
     ('XYZ Enterprises', 'XYZ456', 'Canada', 2, '2023-06-20'),
     ('123 Industries', '123789', 'United Kingdom', 3, '2023-07-25'),
@@ -104,16 +118,3 @@ VALUES
 ('P5678', 'Fridge GM', 'Home Appliances', 399.50, 15, 'USD'),
 ('P737475', 'Rice Cooker Zojirushi', 'Home Appliances', 129.99, 14, 'USD);
 
-INSERT INTO dim_currency (currency_code, currency_name, currency_rate, c__createddate)
-VALUES
-    ('USD', 'United States Dollar', 1.00, '2023-04-10'), 
-    ('INR', 'Indian Rupee', 0.014, '2024-01-10'), 
-    ('JPY', 'Japanese Yen', 0.0093, '2024-02-15'),
-    ('KRW', 'South Korean Won', 0.00088, '2024-03-20'), 
-    ('CNY', 'Chinese Yuan', 0.16, '2024-04-25'), 
-    ('SGD', 'Singapore Dollar', 0.74, '2024-05-30'),
-    ('AUD', 'Australian Dollar', 0.77, '2024-06-05'), 
-    ('NZD', 'New Zealand Dollar', 0.71, '2024-07-10'), 
-    ('TWD', 'New Taiwan Dollar', 0.036, '2024-08-15'),
-    ('THB', 'Thai Baht', 0.032, '2024-08-15'), 
-    ('PHP', 'Philippine Peso', 0.020, '2024-07-15');
