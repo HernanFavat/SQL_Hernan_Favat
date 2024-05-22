@@ -78,3 +78,19 @@ ALTER TABLE facts_products
 ADD CONSTRAINT fk_product_currency
 FOREIGN KEY (currencycode)
 REFERENCES dim_currency(currency_code);
+
+CREATE TABLE sales_target_achieved_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sales_rep VARCHAR(255),
+    total_value DECIMAL(10, 2),
+    currencycode VARCHAR(10) DEFAULT 'USD',
+    achieved_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE technician_opportunity_log (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    opportunity_id INT,
+    technician_id INT,
+    opportunity_name VARCHAR(150),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
