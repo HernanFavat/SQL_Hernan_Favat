@@ -1,4 +1,5 @@
 # SQL_Coderhouse_projecto_HernanFavat
+Drop Database if exists pipeline_management;
 
 CREATE DATABASE pipeline_management;
 USE pipeline_management;
