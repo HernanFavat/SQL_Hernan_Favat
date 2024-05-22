@@ -22,7 +22,7 @@ BEGIN
     GROUP BY u.u__email
     HAVING total_value >= 400;
 END//
-
+DELIMITER ; 
 -- Testiando el trigger con nuevas entradas
 INSERT INTO facts_opportunities (ownerid, accountid, o__name, o__statusname, o__closeddate, o__createddate, productid, currencycode)
 VALUES (4, 5, 'New Opportunity in India', 'Won', '2024-05-19', '2024-05-19', 5, 'USD'), 
