@@ -1,3 +1,5 @@
+use pipeline_management;
+
 INSERT INTO dim_users (u__email, first_name, last_name, u__createddate, isactive, u__type)
 VALUES
 
